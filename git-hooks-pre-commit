@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# This hook prevents accidental commits to a branch
+# which isn't named after the user
+
+branch=`git rev-parse  --abbrev-ref=strict HEAD`
+cutbranch=`echo $branch | cut -d \- -f 1`
+student=`whoami`
+if test "$cutbranch" != "$student"
+then
+  echo "Branch name needs to be $student-[project], current branch is $branch."
+  exit 1
+fi
