@@ -1,7 +1,10 @@
 #!/bin/sh
 #
-# This hook prevents accidental commits to a branch
-# which isn't named after the user
+# This hook reminds students to only use their own branches
+# based on username
+#
+# to install, rename this file like so:
+# mv git-hooks-pre-commit .git/hooks/pre-commit
 
 branch=`git rev-parse  --abbrev-ref=strict HEAD`
 cutbranch=`echo $branch | cut -d \- -f 1`
