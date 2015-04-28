@@ -1,0 +1,651 @@
+Last login: Sat Apr 25 17:36:22 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.3.6
+Homebrew 0.9.5
+ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
+-bash: node: command not found
+
+psql (PostgreSQL) 9.4.1
+heroku-toolbelt/3.32.0 (x86_64-darwin14) ruby/2.2.0 You have no installed plugins.
+------------------------------------------
+type unwelcome to remove this message
+jamesrutledge ~
+$ pwd
+/Users/jamesrutledge
+$ ls
+Applications/  Dropbox/  Package%20Control.sublime-package  dev/
+Blogs/	       Git/	 Pictures/			    flowers/
+Desktop/       Library/  Public/			    fundamentals/
+Documents/     Movies/	 Sites/				    funny_things/
+Downloads/     Music/	 World/				    github/
+jamesrutledge ~
+$ cd fundamentals/
+jamesrutledge ~/fundamentals
+$ ls
+git-practice/  wdi-fundamentals-rps/
+jamesrutledge ~/fundamentals
+$ git clone https://github.com/ga-students/wdi-atx-1-hw.git
+Cloning into 'wdi-atx-1-hw'...
+Username for 'https://github.com': james527
+Password for 'https://james527@github.com': 
+remote: Counting objects: 35, done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 35 (delta 4), reused 22 (delta 2), pack-reused 0
+Unpacking objects: 100% (35/35), done.
+Checking connectivity... done.
+jamesrutledge ~/fundamentals
+$ ls
+git-practice/  wdi-atx-1-hw/  wdi-fundamentals-rps/
+jamesrutledge ~/fundamentals
+$ cd wdi-atx-1-hw/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw on master
+$ ls
+README.md  assignments/  students/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw on master
+$ tree
+.
+├── README.md
+├── assignments
+│   ├── w01
+│   │   ├── d01
+│   │   │   ├── README.md
+│   │   │   └── kitchen
+│   │   │       ├── cans.txt
+│   │   │       ├── fridge
+│   │   │       │   ├── diapers.txt
+│   │   │       │   ├── freezer
+│   │   │       │   │   ├── couch.txt
+│   │   │       │   │   ├── frozenpeas.txt
+│   │   │       │   │   └── icecream.txt
+│   │   │       │   ├── milk.txt
+│   │   │       │   └── trashcan
+│   │   │       │       ├── banana-peels.txt
+│   │   │       │       ├── chicken-bones.txt
+│   │   │       │       ├── egg-shells.txt
+│   │   │       │       └── sink
+│   │   │       │           ├── clean-dishes.txt
+│   │   │       │           ├── delete-me.txt
+│   │   │       │           └── dirty-dishes.txt
+│   │   │       └── pantry
+│   │   │           ├── cans.txt
+│   │   │           ├── cereal.txt
+│   │   │           └── crisper-drawer
+│   │   │               └── lettuce.txt
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w02
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w03
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w04
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w05
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w06
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w07
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w08
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w09
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w10
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   ├── w11
+│   │   ├── d01
+│   │   │   └── README.md
+│   │   ├── d02
+│   │   │   └── README.md
+│   │   ├── d03
+│   │   │   └── README.md
+│   │   ├── d04
+│   │   │   └── README.md
+│   │   └── d05
+│   │       └── README.md
+│   └── w12
+│       ├── d01
+│       │   └── README.md
+│       ├── d02
+│       │   └── README.md
+│       ├── d03
+│       │   └── README.md
+│       ├── d04
+│       │   └── README.md
+│       └── d05
+│           └── README.md
+└── students
+    └── README.md
+
+81 directories, 77 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw on master
+$ clear
+
+jamesrutledge ~/fundamentals/wdi-atx-1-hw on master
+$ ls
+README.md  assignments/  students/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw on master
+$ cd assignments/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments on master
+$ ls
+w01/  w02/  w03/  w04/	w05/  w06/  w07/  w08/	w09/  w10/  w11/  w12/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments on master
+$ cd w01/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01 on master
+$ ls
+d01/  d02/  d03/  d04/	d05/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01 on master
+$ tree
+.
+├── d01
+│   ├── README.md
+│   └── kitchen
+│       ├── cans.txt
+│       ├── fridge
+│       │   ├── diapers.txt
+│       │   ├── freezer
+│       │   │   ├── couch.txt
+│       │   │   ├── frozenpeas.txt
+│       │   │   └── icecream.txt
+│       │   ├── milk.txt
+│       │   └── trashcan
+│       │       ├── banana-peels.txt
+│       │       ├── chicken-bones.txt
+│       │       ├── egg-shells.txt
+│       │       └── sink
+│       │           ├── clean-dishes.txt
+│       │           ├── delete-me.txt
+│       │           └── dirty-dishes.txt
+│       └── pantry
+│           ├── cans.txt
+│           ├── cereal.txt
+│           └── crisper-drawer
+│               └── lettuce.txt
+├── d02
+│   └── README.md
+├── d03
+│   └── README.md
+├── d04
+│   └── README.md
+└── d05
+    └── README.md
+
+12 directories, 20 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01 on master
+$ cd d01/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ clear
+
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ pwd
+/Users/jamesrutledge/fundamentals/wdi-atx-1-hw/assignments/w01/d01
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ tree
+.
+├── README.md
+└── kitchen
+    ├── cans.txt
+    ├── fridge
+    │   ├── diapers.txt
+    │   ├── freezer
+    │   │   ├── couch.txt
+    │   │   ├── frozenpeas.txt
+    │   │   └── icecream.txt
+    │   ├── milk.txt
+    │   └── trashcan
+    │       ├── banana-peels.txt
+    │       ├── chicken-bones.txt
+    │       ├── egg-shells.txt
+    │       └── sink
+    │           ├── clean-dishes.txt
+    │           ├── delete-me.txt
+    │           └── dirty-dishes.txt
+    └── pantry
+        ├── cans.txt
+        ├── cereal.txt
+        └── crisper-drawer
+            └── lettuce.txt
+
+7 directories, 16 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ cat README.md 
+# Homework
+
+1. **Read:** [ProGit, Chapter 1.1](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
+2. **CLI Golf!** Using `mv`, `cp`, `rm` and `mkdir`, reorganize the kitchen in as few steps as possible!
+
+Copy the text in your terminal prompt, and save it to a text file.
+
+
+## Start Here:
+
+    kitchen/
+    ├── cans.txt
+    ├── fridge
+    │   ├── diapers.txt
+    │   ├── freezer
+    │   │   ├── couch.txt
+    │   │   ├── frozenpeas.txt
+    │   │   └── icecream.txt
+    │   ├── milk.txt
+    │   └── trashcan
+    │       ├── banana-peels.txt
+    │       ├── chicken-bones.txt
+    │       ├── egg-shells.txt
+    │       └── sink
+    │           ├── clean-dishes.txt
+    │           ├── delete-me.txt
+    │           └── dirty-dishes.txt
+    └── pantry
+        ├── cans.txt
+        ├── cereal.txt
+        └── crisper-drawer
+            └── lettuce.txt
+
+## End Here:
+
+    kitchen/
+    ├── fridge/
+    │   ├── crisper-drawer/
+    │   │   ├── apples.txt
+    │   │   └── lettuce.txt
+    │   ├── freezer/
+    │   │   ├── frozenpeas.txt
+    │   │   └── icecream.txt
+    │   └── milk.txt
+    ├── pantry/
+    │   ├── cans.txt
+    │   └── cereal.txt
+    ├── sink/
+    │   ├── dirty-dishes.txt
+    │   └── drying-rack/
+    │       └── clean-dishes.txt
+    └── trashcan/
+        ├── banana-peels.txt
+	    ├── chicken-bones.txt
+	    └── egg-shells.txtjamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ open README.md 
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ ls -a
+./  ../  README.md  kitchen/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ tree
+.
+├── README.md
+└── kitchen
+    ├── cans.txt
+    ├── fridge
+    │   ├── diapers.txt
+    │   ├── freezer
+    │   │   ├── couch.txt
+    │   │   ├── frozenpeas.txt
+    │   │   └── icecream.txt
+    │   ├── milk.txt
+    │   └── trashcan
+    │       ├── banana-peels.txt
+    │       ├── chicken-bones.txt
+    │       ├── egg-shells.txt
+    │       └── sink
+    │           ├── clean-dishes.txt
+    │           ├── delete-me.txt
+    │           └── dirty-dishes.txt
+    └── pantry
+        ├── cans.txt
+        ├── cereal.txt
+        └── crisper-drawer
+            └── lettuce.txt
+
+7 directories, 16 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ pwd
+/Users/jamesrutledge/fundamentals/wdi-atx-1-hw/assignments/w01/d01
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master
+$ cd kitchen/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ clear
+
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ mv cans.txt pantry/
+mv: overwrite ‘pantry/cans.txt’? n
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ cat cans.txt 
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ cat pantry/cans.txt 
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ mv cans.txt pantry/
+mv: overwrite ‘pantry/cans.txt’? y
+‘cans.txt’ -> ‘pantry/cans.txt’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ clear
+
+
+
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 14 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ cd fridge/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ mv -r trashcan/ ../
+mv: invalid option -- 'r'
+Try 'mv --help' for more information.
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ mv trashcan/ ../
+‘trashcan/’ -> ‘../trashcan’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ cd ..
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ clear
+
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+6 directories, 14 files
+mjamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv trashcan/sink/ ./
+‘trashcan/sink/’ -> ‘./sink’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 14 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv pantry/crisper-drawer/ fridge/
+‘pantry/crisper-drawer/’ -> ‘fridge/crisper-drawer’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 14 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm sink/delete-me.txt 
+rm: remove regular empty file ‘sink/delete-me.txt’? y
+removed ‘sink/delete-me.txt’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mkdir sink/drying-rack
+mkdir: created directory ‘sink/drying-rack’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm fridge/diapers.txt 
+rm: remove regular empty file ‘fridge/diapers.txt’? y
+removed ‘fridge/diapers.txt’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm fridge/freezer/couch.txt 
+rm: remove regular empty file ‘fridge/freezer/couch.txt’? y
+removed ‘fridge/freezer/couch.txt’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv sink/clean-dishes.txt sink/drying-rack/
+‘sink/clean-dishes.txt’ -> ‘sink/drying-rack/clean-dishes.txt’
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 11 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ touch fridge/crisper-drawer/apples.txt
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+jamesrutledge ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ 

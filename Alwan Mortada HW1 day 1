@@ -1,0 +1,388 @@
+Last login: Mon Apr 27 16:17:40 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.3.6
+Homebrew 0.9.5
+ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin13]
+-bash: node: command not found
+
+psql (PostgreSQL) 9.4.1
+pwdheroku-toolbelt/3.32.0 (x86_64-darwin13) ruby/2.2.0 You have no installed plugins.
+------------------------------------------
+type unwelcome to remove this message
+alwanmortada ~
+$ pwd
+/Users/alwanmortada
+alwanmortada ~
+$ ls
+Applications/  Documents/  Library/  Music/	Public/  marigold
+Desktop/       Downloads/  Movies/   Pictures/	dev/
+alwanmortada ~
+$ cd Desktop/
+alwanmortada ~/Desktop
+$ cd GA-Blog/
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ pwd
+/Users/alwanmortada/Desktop/GA-Blog
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ ls
+dupe_file.txt  dupe_folder/  new_folder/  wdi-atx-1-hw/
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ ls
+dupe_file.txt  dupe_folder/  new_folder/  wdi-atx-1-hw/
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ ls -la
+total 8
+drwxr-xr-x   8 alwanmortada staff  272 Apr 27 18:24 ./
+drwx------+  5 alwanmortada staff  170 Apr 19 18:16 ../
+-rw-r--r--   1 alwanmortada staff 6148 Apr 27 18:23 .DS_Store
+drwxr-xr-x  13 alwanmortada staff  442 Apr 19 19:00 .git/
+-rw-r--r--   1 alwanmortada staff    0 Apr 27 16:34 dupe_file.txt
+drwxr-xr-x   3 alwanmortada staff  102 Apr 27 16:37 dupe_folder/
+drwxr-xr-x   2 alwanmortada staff   68 Apr 27 16:24 new_folder/
+drwxr-xr-x   6 alwanmortada staff  204 Apr 27 18:21 wdi-atx-1-hw/
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ cd ..
+alwanmortada ~/Desktop
+$ ls
+GA-Blog/
+alwanmortada ~/Desktop
+$ c GA-Blog/
+-bash: c: command not found
+alwanmortada ~/Desktop
+$ cd GA-Blog/
+alwanmortada ~/Desktop/GA-Blog on master[!?]
+$ cd wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge/
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ tree
+.
+├── diapers.txt
+├── freezer
+│   ├── couch.txt
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+3 directories, 11 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen/fridge on master[!]
+$ cd ..
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ mv clean-dishes.txt/sink/trashcan/fridge freezer  
+mv: cannot stat ‘clean-dishes.txt/sink/trashcan/fridge’: No such file or directory
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ rm  fridge/freezer/couch.txt 
+rm: remove regular empty file ‘fridge/freezer/couch.txt’? y
+removed ‘fridge/freezer/couch.txt’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 14 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ rm fridge/diapers.txt 
+rm: remove regular empty file ‘fridge/diapers.txt’? y
+removed ‘fridge/diapers.txt’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 13 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!]
+$ mv pantry/crisper-drawer/ fridge/
+‘pantry/crisper-drawer/’ -> ‘fridge/crisper-drawer’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ touch fridge/crisper-drawer/apples.txt
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 14 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv fridge/trashcan/sink .
+‘fridge/trashcan/sink’ -> ‘./sink’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rtee
+-bash: rtee: command not found
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── sink
+    ├── clean-dishes.txt
+    ├── delete-me.txt
+    └── dirty-dishes.txt
+
+6 directories, 14 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm sink/delete-me.txt 
+rm: remove regular empty file ‘sink/delete-me.txt’? y
+removed ‘sink/delete-me.txt’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── sink
+    ├── clean-dishes.txt
+    └── dirty-dishes.txt
+
+6 directories, 13 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mkdir sink/drying-rack
+mkdir: created directory ‘sink/drying-rack’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── sink
+    ├── clean-dishes.txt
+    ├── dirty-dishes.txt
+    └── drying-rack
+
+7 directories, 13 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv sink/clean-dishes.txt ./sink/drying-rack
+‘sink/clean-dishes.txt’ -> ‘./sink/drying-rack/clean-dishes.txt’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── sink
+    ├── dirty-dishes.txt
+    └── drying-rack
+        └── clean-dishes.txt
+
+7 directories, 13 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm cans.txt 
+rm: remove regular empty file ‘cans.txt’? y
+removed ‘cans.txt’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── sink
+    ├── dirty-dishes.txt
+    └── drying-rack
+        └── clean-dishes.txt
+
+7 directories, 12 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv fridge/trashcan/ ./
+‘fridge/trashcan/’ -> ‘./trashcan’
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+alwanmortada ~/Desktop/GA-Blog/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ 
