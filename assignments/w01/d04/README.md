@@ -1,5 +1,10 @@
 # Choose Your Own Adventure!
 
+1. Rules
+2. Sample Ideas
+3. Tools
+4. Sample Pseudocode
+
 ### Rules
 - **Goal**: Using what you know about data types, variables, operators, conditional blocks, and accepting user input, create a text-based game that allows the user to arrive at different "destinations" based on the inputs they type
 - Any path the user goes down must ask them at least 3 questions (there can be more!) before they arrive at the destination
@@ -13,6 +18,10 @@
 - A Lord of the Rings style adventure where the player is Frodo, and he must choose how to get to Mordor. Possible obstacles involve Orcs, goblins, and getting drunk on mead.
 - A "Top Chef" style cooking adventure where the player is the chef, trying to make dinner for an elite group of judges. Possible obstacles include overcooking the meal, running out of time, or the judges being jerks.
 - A Harry Potter themed adventure, where the user is Harry trying to find all the horcruxes. Possible obstacles include Voldemort killing people, Professor Snape being a jerk, or Ron not knowing how to do anything.
+
+### Tools
+- Write in Javascript.
+- Use the prompt() to accept user input.
 
 ### Example (pseudocode)
 
