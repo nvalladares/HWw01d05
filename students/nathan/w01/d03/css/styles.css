@@ -1,0 +1,61 @@
+body {
+    position: relative;
+    max-width: 1060px;
+    color: #00CED1;
+    
+
+}
+header {
+    position: absolute;
+    background-color: #00CED1;
+    max-width: 1060px;
+}
+img {
+    width: auto;
+    height: auto;
+}
+ul {
+    list-style-type: none;
+}
+footer {
+    text-align: center;
+    content: center;
+}
+.row {
+    position: fixed-top;
+    max-width: 1060px;
+}
+.social {
+    content: center;
+}
+.secondary_nav {
+    text-align: center;
+}
+
+.clearfix {
+    overflow: auto;
+    }
+.colright { 
+    float: right;
+    width: 33% 
+}
+.colleft { 
+    float: right;
+    width: 33%
+}
+.blockright { 
+    float: right;
+    width: 20%
+}
+.float_left {
+    float: left;
+}
+
+
+}
+.searchhome {
+
+}
+.logo {
+
+}
