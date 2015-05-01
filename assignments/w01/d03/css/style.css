@@ -1,0 +1,29 @@
+header{
+	padding:55px 0 35px;
+	margin: 10px;
+	vertical-align: baseline;
+	float: none;
+	background: #00d6dd;
+}
+
+ul{
+	display: block;
+	text-align: center;	
+}
+
+footer{
+	text-align: center;
+}
+
+
+.bluebox{
+	float: inline;
+}
+
+.imgtxt{
+	color: #00d6dd;
+	padding: 10px;
+	font-size: 1.5em;
+	font-family: helvetica;
+
+}
