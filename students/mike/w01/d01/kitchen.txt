@@ -1,0 +1,273 @@
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ mvdir fridge/trashcan/sink .
+-bash: mvdir: command not found
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master
+$ mv fridge/trashcan/ .
+‘fridge/trashcan/’ -> ‘./trashcan’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+6 directories, 15 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv trashcan/sink .
+‘trashcan/sink’ -> ‘./sink’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm cans.txt 
+rm: remove regular empty file ‘cans.txt’? y
+removed ‘cans.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 14 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm fridge/diapers.txt 
+rm: remove regular empty file ‘fridge/diapers.txt’? y
+removed ‘fridge/diapers.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm sink/delete-me.txt 
+rm: remove regular empty file ‘sink/delete-me.txt’? y
+removed ‘sink/delete-me.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm fridge/freezer/couch.txt 
+rm: remove regular empty file ‘fridge/freezer/couch.txt’? y
+removed ‘fridge/freezer/couch.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 11 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mkdir fridge/crisper-drawer
+mkdir: created directory ‘fridge/crisper-drawer’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rm fridge/crisper-drawer/
+rm: cannot remove ‘fridge/crisper-drawer/’: Is a directory
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ rmdir fridge/crisper-drawer/
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv -r  pantry/crisper-drawer/ fridge
+mv: invalid option -- 'r'
+Try 'mv --help' for more information.
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv  pantry/crisper-drawer/ fridge
+‘pantry/crisper-drawer/’ -> ‘fridge/crisper-drawer’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 11 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ cp fridge/crisper-drawer/lettuce.txt fridge/crisper-drawer/apples.txt
+‘fridge/crisper-drawer/lettuce.txt’ -> ‘fridge/crisper-drawer/apples.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 12 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mkdir pantry/drying-rack
+mkdir: created directory ‘pantry/drying-rack’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv pantry/drying-rack/ sink
+‘pantry/drying-rack/’ -> ‘sink/drying-rack’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ mv sink/clean-dishes.txt sink/drying-rack/
+‘sink/clean-dishes.txt’ -> ‘sink/drying-rack/clean-dishes.txt’
+Mike ~/Coding/wdi-atx-1-hw/assignments/w01/d01/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
