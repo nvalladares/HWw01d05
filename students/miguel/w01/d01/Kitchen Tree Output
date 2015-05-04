@@ -1,0 +1,59 @@
+Last login: Mon Apr 27 16:05:26 on ttys000
+miguelsolano ~
+$ ls
+Applications/  Downloads/  Music/     World/	fundamentals/
+Desktop/       Library/    Pictures/  dev/
+Documents/     Movies/	   Public/    flowers/
+miguelsolano ~
+$ cd fundamentals/
+miguelsolano ~/fundamentals
+$ ls
+git-practice/  wdi-atx-1-hw/  wdi-fundamentals-rps/
+miguelsolano ~/fundamentals
+$ cd wdi-atx-1-hw/
+miguelsolano ~/fundamentals/wdi-atx-1-hw on master[!?]
+$ ls
+README.md  assignments/  students/
+miguelsolano ~/fundamentals/wdi-atx-1-hw on master[!?]
+$ cd assignments/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments on master[!?]
+$ ls
+w01/  w02/  w03/  w04/	w05/  w06/  w07/  w08/	w09/  w10/  w11/  w12/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments on master[!?]
+$ cd w01/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments/w01 on master[!?]
+$ ls
+d01/  d02/  d03/  d04/	d05/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments/w01 on master[!?]
+$ cd d01/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master[?]
+$ ls
+README.md  kitchen/
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master[?]
+$ tree
+.
+├── README.md
+└── kitchen
+    ├── fridge
+    │   ├── crisper-drawer
+    │   │   ├── apples.txt
+    │   │   └── lettuce.txt
+    │   ├── freezer
+    │   │   ├── frozenpeas.txt
+    │   │   └── icecream.txt
+    │   └── milk.txt
+    ├── pantry
+    │   ├── cans.txt
+    │   └── cereal.txt
+    ├── sink
+    │   ├── dirty-dishes.txt
+    │   └── drying-rack
+    │       └── clean-dishes.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        └── egg-shells.txt
+
+8 directories, 13 files
+miguelsolano ~/fundamentals/wdi-atx-1-hw/assignments/w01/d01 on master[?]
+$ 
